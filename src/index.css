@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: rgb(240, 237, 237);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.search{
+    background-image: url('/public/search.svg');
+    
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-image: gray;
+    background-size: 15px;
+    backface-visibility: visible;
 }
+div.alice-carousel > ul.alice-carousel__dots {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 5px;
+    top:75%;
+    left: 45%;
+    color: black !important;
+   height: auto; 
+   
+}
+  
+  .alice-carousel__prev-btn{
+    top:20%;
+    height: auto;
+  }
+  
+  
+  .alice-carousel__next-btn {
+     
+      top: 20%;
+      height: auto;
+      left:0;
+  }
+ .alice-carousel__dots-item.__active{
+    background: black !important;
+   
+}
+
+.alice-carousel__dots-item {
+    background: white !important;
+}
+
